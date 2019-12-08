@@ -15,7 +15,7 @@ export default function Notes(props) {
 
   useEffect(() => {
     function loadNote() {
-      return API.get("notes", `/notes/${props.match.params.id}`);
+      return API.get("notes", `/climbs/${props.match.params.id}`);
     }
 
     async function onLoad() {
@@ -50,7 +50,7 @@ export default function Notes(props) {
   }
 
   function saveNote(note) {
-    return API.put("notes", `/notes/${props.match.params.id}`, {
+    return API.put("notes", `/climbs/${props.match.params.id}`, {
       body: note
     });
   }
@@ -87,7 +87,7 @@ export default function Notes(props) {
   }
 
   function deleteNote() {
-    return API.del("notes", `/notes/${props.match.params.id}`);
+    return API.del("notes", `/climbs/${props.match.params.id}`);
   }
 
   async function handleDelete(event) {

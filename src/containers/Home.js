@@ -29,7 +29,7 @@ export default function Home(props) {
   }, [props.isAuthenticated]);
 
   function loadNotes() {
-    return API.get("notes", "/notes");
+    return API.get("notes", "/climbs");
   }
 
   function renderNotesList(notes) {
