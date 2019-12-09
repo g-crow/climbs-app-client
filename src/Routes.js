@@ -18,8 +18,7 @@ export default function Routes({ appProps }) {
       <AppliedRoute path="/" exact component={Home} appProps={appProps} />
       <UnauthenticatedRoute path="/login" exact component={Login} appProps={appProps} />
       <UnauthenticatedRoute path="/signup" exact component={Signup} appProps={appProps} />
-      <UnauthenticatedRoute path="/about" exact component={About} appProps={appProps} />
-      <AuthenticatedRoute path="/about" exact component={About} appProps={appProps} />
+      <Route path="/about" exact component={About} appProps={appProps} />
       <AuthenticatedRoute path="/settings" exact component={Settings} appProps={appProps} />
       <AuthenticatedRoute path="/notes/new" exact component={NewNote} appProps={appProps} />
       <AuthenticatedRoute path="/notes/:id" exact component={Notes} appProps={appProps} />
