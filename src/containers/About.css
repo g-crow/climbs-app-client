@@ -1,0 +1,18 @@
+@media all and (min-width: 480px) {
+  .About {
+    padding: 60px 0;
+  }
+
+  .About img {
+    margin: 0 auto;
+    max-width: 480px;
+  }
+
+  .About .contents.top {
+    padding: 0 0 40px 0;
+  }
+
+  .About .contents.bottom {
+    padding: 40px 0 0 0;
+  }
+}

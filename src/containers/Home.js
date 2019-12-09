@@ -56,7 +56,7 @@ export default function Home(props) {
     return (
       <div className="lander">
         <h1>Git Tough</h1>
-        <p>A simple note taking app</p>
+        <p>A simple climb tracking app</p>
         <div>
           <Link to="/login" className="btn btn-info btn-lg">
             Login
