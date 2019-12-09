@@ -51,12 +51,18 @@ function App(props) {
               {isAuthenticated ? (
                 <>
                   <LinkContainer to="/settings">
+                    <LinkContainer to="/about">
+                      <NavItem>About</NavItem>
+                    </LinkContainer>
                     <NavItem>Settings</NavItem>
                   </LinkContainer>
                   <NavItem onClick={handleLogout}>Logout</NavItem>
                 </>
               ) : (
                 <>
+                  <LinkContainer to="/about">
+                    <NavItem>About</NavItem>
+                  </LinkContainer>
                   <LinkContainer to="/signup">
                     <NavItem>Signup</NavItem>
                   </LinkContainer>
